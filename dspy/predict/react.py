@@ -24,13 +24,14 @@ class ReAct(Module):
         assert len(self.output_fields) == 1, "ReAct only supports one output field."
 
         inputs_ = ", ".join([f"`{k}`" for k in self.input_fields.keys()])
-        outputs_ = ", ".join([f"`{k}`" for k in self.output_fields.keys()])
+        outputs_ = ", ".join([f"`{k}: {v.json_schema_extra['desc']}`" for k,v in self.output_fields.items()])
 
         instr = [
-            f"You will be given {inputs_} and you will respond with {outputs_}.\n",
+            f"You will be given inputs:\n{inputs_}\nand you will respond with an output:\n{outputs_}.\n",
             "To do this, you will interleave Thought, Action, and Observation steps.\n",
             "Thought can reason about the current situation, and Action can be the following types:\n",
         ]
+        self.instr = instr
 
         self.tools["Finish"] = dspy.Example(
             name="Finish",
