@@ -5,7 +5,7 @@ Q: HNO 8146 STNO 13 MILERGANJ
 A: {"house_number": "8146", "streen_number": "13", "city": "MILERGANJ", "state": "N/A", "pincode": "N/A"}
 
 Q: BLOCK 280 AWAS NO 08 GANGA GANJ PANKI
-A: {"house_number": "08", "block": "280", "locality": "GANGA GANJ PANKI", "city": "N/A", "state": "N/A", "pincode": "N/A"}
+A: {"house_number": "08", "block": "280", "locality": "GANGA GANJ", "city": "PANKI", "state": "N/A", "pincode": "N/A"}
 
 Q: A-373 Behind Payal Cinemas Gurgaon
 A: {"house_number": "373", "block": "A", "city": "Gurgaon", "state": "N/A", "pincode": "N/A", "landmark": "Behind Payal Cinemas"}
@@ -63,3 +63,15 @@ A: { "house_number": "N/A", "city": "Gwalior", "state": "Madhya Pradesh", "pinco
 
 Q: HNo 136 Thane Mumbai Maharashtra
 A: {"house_number": "136", "city": "Mumbai", "state": "Maharashtra", "pincode": "N/A"}
+
+Q: 66, DIST AMARAVAT 702 NITIN THAKUR TEH - DHARNI Pune Pune Maharashtra 410506
+A: {"house_number": "66", "city": "Pune", "state": "Maharashtra", "pincode": "410506", "district": "Amaravati", "tehsil": "Dharni"}
+
+Q: 569 basti peer Dad jalandha jalandhar Jalandhar Jalandhar Punjab 144021
+A: {"house_number": "569", "locality": "basti peer Dad", "city": "Jalandhar", "state": "Punjab", "pincode": "144021"}
+
+Q: rm no 1388 lokmanya nagar road no 22 lokmanya nagar BEH Thane Thane Maharashtra 400606
+A: {"house_number": "1388", "street_name": "road no 22", "locality": "lokmanya nagar", "city": "Thane", "state": "Maharashtra", "pincode": "400606"}
+
+Q: tupewadi parundi parundi aurangabad parundi aurangabad aurangabad maharashtra
+A: {"house_number": "N/A", "locality": "Parundi", "city": "Aurangabad", "state": "Maharashtra", "pincode": "N/A"}
