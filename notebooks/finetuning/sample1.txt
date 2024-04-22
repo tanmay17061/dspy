@@ -1,0 +1,25 @@
+Sumi Bhavan Alanthara Venjaramoodu P O,nellanad Trivandrum Trivandrum Kerala 695607
+Reasoning: Let's think step by step in order to produce the address_components. We start by identifying the key elements of the address:
+
+1. house name: "Sumi Bhavan" appears to be the name of the house or building.
+2. locality/village: "nellanad" seems to be the locality or village name.
+3. post office (P O): "Venjaramoodu" is identified as the post office, which is a common component in rural Indian addresses.
+4. city/district: "Trivandrum" is mentioned twice, which likely indicates it as the city or district.
+5. state: "Kerala" is clearly the state.
+6. Pincode: "695607" is the postal code.
+
+Next, we ensure that there is no repetition of information. "Trivandrum" is mentioned twice, so we only need to include it once, preferably as the city or district. We will add it as the city. We also filter out any irrelevant characters or spurious digits, but in this case, all characters are relevant.
+
+Finally, we check for completeness and correctness. Each component is filled with the relevant information from the address, ensuring no critical details are missed and each part is correct.
+
+Address Components:
+{
+    "house_number": "N/A",
+    "house_name": "Sumi Bhavan",
+    "locality": "Alanthara",
+    "city": "Trivandrum",
+    "state": "Kerala",
+    "pincode": "695607",
+    "post_office": "Venjaramoodu P O",
+    "village": "nellanad"
+}

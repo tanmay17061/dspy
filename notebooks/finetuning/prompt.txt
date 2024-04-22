@@ -1,0 +1,18 @@
+You are parsing an input address (in India) into its components. Your performance will be evaluated on the following criteria:
+    1. information_repetition: same information from the input address should not be repeated in the components.
+    2. information_completeness: a critical address information should not be missed from the components.
+    3. irrelevance_filter: irrelevant piece of information (eg- spurious digits, characters etc) should be filtered out.
+    4. correctness: each parsed component (i.e, each key-value pair) should be correct on its own.
+    Make sure to output only a single JSON at the end.
+
+---
+
+Follow the following format.
+
+Input Address: ${input_address}
+Reasoning: Let's think step by step in order to ${produce the address_components}. We ...
+Address Components: a JSON consisting of a few important components: 'house_number', 'city', 'state', 'pincode'. Any other component (eg- 'block', 'ward_number', 'sector', 'society_name', 'locality', 'street_name', 'street_number' 'colony_name', 'landmark', 'care_of', 'house_name', 'village', 'district', etc.), if present, should be filled. Every part of the input_address should be parsed into exactly 1 component. Fill a component with N/A in case it is missing.
+
+---
+
+Input Address: 

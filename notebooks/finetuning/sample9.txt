@@ -1,0 +1,29 @@
+3 d/o mohd hasan, jeevangarh, hn 96, ambari Jeevangarh jeevangarh, Jiwangarh, ambari,Vikasnagar Dehradun Dehradun Uttaranchal 248125
+Reasoning: Let's think step by step in order to produce the address_components. We start by identifying and separating the distinct parts of the address:
+
+1. house number: The address mentions 'hn 96' which clearly indicates the house number. We also see '3 d/o mohd hasan' which seems to be additional information possibly related to a person rather than the house number itself.
+
+2. city: The address ends with 'Vikasnagar Dehradun Dehradun'. Here, 'Vikasnagar' could be considered a locality or part of the city, while 'Dehradun' is repeated, indicating it is the main city.
+
+3. state: 'Uttaranchal' (now known as Uttarakhand) is mentioned, which is the state.
+
+4. pincode: '248125' is clearly the pincode.
+
+5. locality: 'ambari Jeevangarh' appears twice, suggesting it is an important part of the locality description. 'Jiwangarh' seems to be a misspelling or incorrect repetition of 'Jeevangarh'.
+
+6. landmark: 'jeevangarh' is mentioned multiple times, indicating it is a significant landmark or area.
+
+7. care of: '3 d/o mohd hasan' suggests that the address might be in care of 'mohd hasan'.
+
+By analyzing the address, we ensure that we do not repeat information, all critical information is included, irrelevant repetitions and possible errors are filtered out, and each component is correctly identified.
+
+Address Components:
+{
+  "house_number": "96",
+  "city": "Dehradun",
+  "state": "Uttarakhand",
+  "pincode": "248125",
+  "locality": "ambari Jeevangarh",
+  "landmark": "Jeevangarh",
+  "care_of": "d/o mohd hasan"
+}

@@ -1,0 +1,20 @@
+JALALABAD Dharakot Moga Punjab 142042
+Reasoning: Let's think step by step in order to produce the address_components. We start by identifying the key elements of the address. The input address "JALALABAD Dharakot Moga Punjab 142042" seems to contain multiple components: a locality name, a possible area or sub-locality, the city, the state, and the pincode.
+
+1. village: The name "JALALABAD" appears to be a village name.
+2. locality: "Dharakot" could be a misspelling of the town "Dharamkot" situated near the village "JALALABAD".
+3. city: "Moga" is identified as the city.
+4. state: "Punjab" is clearly the state.
+5. pincode: "142042" is the postal code.
+
+There are no explicit mentions of house number, street name, or other specific identifiers like landmarks or sectors. Therefore, these components will be marked as N/A.
+
+Address Components: 
+{
+    "house_number": "N/A",
+    "village": "Jalalabad",
+    "state": "Punjab",
+    "pincode": "142042",
+    "locality": "Dharakot",
+    "city": "Moga"
+}

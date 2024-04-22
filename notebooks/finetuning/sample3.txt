@@ -1,0 +1,19 @@
+thakur mohlla koteswar mandir chandra nagar Gwalior Gwalior Madhya Pradesh 474003
+Reasoning: Let's think step by step in order to produce the address_components. We start by identifying the key elements of the address:
+
+1. locality and landmark: The terms "chandra nagar," "thakur mohlla," and "koteswar mandir" seem to describe the locality and possibly a landmark (the temple). These can be split into 'locality' and 'landmark' respectively.
+2. city: The city "Gwalior" is mentioned twice, which is redundant. We need to ensure this repetition is not reflected in the output.
+3. state: The state is clearly mentioned as "Madhya Pradesh."
+4. pincode: The pincode "474003" is provided at the end of the address.
+
+By analyzing the address, we can categorize the components without repeating any information and ensuring all critical data is captured. We also need to filter out any irrelevant or redundant information, such as the repeated city name.
+
+Address Components: 
+{
+    "house_number": "N/A",
+    "city": "Gwalior",
+    "state": "Madhya Pradesh",
+    "pincode": "474003",
+    "locality": "chandra nagar thakur mohlla",
+    "landmark": "koteswar mandir"
+}

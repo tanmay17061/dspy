@@ -1,0 +1,11 @@
+D-BLOCK 4/181,182 SULTANPURI New Delhi Delhi Delhi 110086
+Reasoning: Let's think step by step in order to produce the address_components. We start by identifying the house number, which appears to be "4/181,182". Next, we note the block, which is "D-BLOCK". The locality is "SULTANPURI". The city and state are both mentioned as "New Delhi" and "Delhi" respectively. The pincode is "110086". It's important to note that "Delhi" is repeated multiple times, but we only need to mention it once under the state component to avoid repetition. There are no other components like ward number, sector, society name, etc., mentioned in the address.
+
+Address Components: 
+{
+    "house_number": "4/181,182",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "pincode": "110086",
+    "block": "D-BLOCK"
+}

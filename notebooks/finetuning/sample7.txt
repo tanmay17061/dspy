@@ -1,0 +1,12 @@
+STNO 13 HNO 8146 MILERGANJ
+Reasoning: Let's think step by step in order to produce the address components. First, we identify the house number, which is indicated by "HNO 8146". Next, we see "STNO 13" which stands for street number 13. The term "MILERGANJ" does not clearly indicate whether it is a city, locality, or another type of area, but based on common naming conventions in India, it could be interpreted as a locality or a part of a city. Since the city and pincode are not mentioned, and no other specific details like state or district are provided, we will mark them as N/A.
+
+Address Components: 
+{
+  "house_number": "8146",
+  "street_number": "13",
+  "locality": "MILERGANJ",
+  "city": "N/A",
+  "state": "N/A",
+  "pincode": "N/A"
+}

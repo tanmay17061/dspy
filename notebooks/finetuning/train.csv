@@ -1,0 +1,329 @@
+text
+"You are parsing an input address (in India) into its components. Your performance will be evaluated on the following criteria:
+    1. information_repetition: same information from the input address should not be repeated in the components.
+    2. information_completeness: a critical address information should not be missed from the components.
+    3. irrelevance_filter: irrelevant piece of information (eg- spurious digits, characters etc) should be filtered out.
+    4. correctness: each parsed component (i.e, each key-value pair) should be correct on its own.
+    Make sure to output only a single JSON at the end.
+
+---
+
+Follow the following format.
+
+Input Address: ${input_address}
+Reasoning: Let's think step by step in order to ${produce the address_components}. We ...
+Address Components: a JSON consisting of a few important components: 'house_number', 'city', 'state', 'pincode'. Any other component (eg- 'block', 'ward_number', 'sector', 'society_name', 'locality', 'street_name', 'street_number' 'colony_name', 'landmark', 'care_of', 'house_name', 'village', 'district', etc.), if present, should be filled. Every part of the input_address should be parsed into exactly 1 component. Fill a component with N/A in case it is missing.
+
+---
+
+Input Address: RAK Road Wadala Arvi Room No 133 Mumbai Maharashtra 400031
+Reasoning: Let's think step by step in order to produce the address_components. We start by identifying the house number, which in this case is given as ""Room No 133"". Next, we look for the street name, which is ""RAK Road"". The locality is identified as ""Wadala Arvi"", which seems to be a specific area within the larger city context. The city is clearly mentioned as ""Mumbai"". The state is ""Maharashtra"", and the pincode is ""400031"".
+
+Address Components: 
+{
+  ""house_number"": ""Room No 133"",
+  ""street_name"": ""RAK Road"",
+  ""locality"": ""Wadala Arvi"",
+  ""city"": ""Mumbai"",
+  ""state"": ""Maharashtra"",
+  ""pincode"": ""400031""
+}"
+"You are parsing an input address (in India) into its components. Your performance will be evaluated on the following criteria:
+    1. information_repetition: same information from the input address should not be repeated in the components.
+    2. information_completeness: a critical address information should not be missed from the components.
+    3. irrelevance_filter: irrelevant piece of information (eg- spurious digits, characters etc) should be filtered out.
+    4. correctness: each parsed component (i.e, each key-value pair) should be correct on its own.
+    Make sure to output only a single JSON at the end.
+
+---
+
+Follow the following format.
+
+Input Address: ${input_address}
+Reasoning: Let's think step by step in order to ${produce the address_components}. We ...
+Address Components: a JSON consisting of a few important components: 'house_number', 'city', 'state', 'pincode'. Any other component (eg- 'block', 'ward_number', 'sector', 'society_name', 'locality', 'street_name', 'street_number' 'colony_name', 'landmark', 'care_of', 'house_name', 'village', 'district', etc.), if present, should be filled. Every part of the input_address should be parsed into exactly 1 component. Fill a component with N/A in case it is missing.
+
+---
+
+Input Address: 3 d/o mohd hasan, jeevangarh, hn 96, ambari Jeevangarh jeevangarh, Jiwangarh, ambari,Vikasnagar Dehradun Dehradun Uttaranchal 248125
+Reasoning: Let's think step by step in order to produce the address_components. We start by identifying and separating the distinct parts of the address:
+
+1. house number: The address mentions 'hn 96' which clearly indicates the house number. We also see '3 d/o mohd hasan' which seems to be additional information possibly related to a person rather than the house number itself.
+
+2. city: The address ends with 'Vikasnagar Dehradun Dehradun'. Here, 'Vikasnagar' could be considered a locality or part of the city, while 'Dehradun' is repeated, indicating it is the main city.
+
+3. state: 'Uttaranchal' (now known as Uttarakhand) is mentioned, which is the state.
+
+4. pincode: '248125' is clearly the pincode.
+
+5. locality: 'ambari Jeevangarh' appears twice, suggesting it is an important part of the locality description. 'Jiwangarh' seems to be a misspelling or incorrect repetition of 'Jeevangarh'.
+
+6. landmark: 'jeevangarh' is mentioned multiple times, indicating it is a significant landmark or area.
+
+7. care of: '3 d/o mohd hasan' suggests that the address might be in care of 'mohd hasan'.
+
+By analyzing the address, we ensure that we do not repeat information, all critical information is included, irrelevant repetitions and possible errors are filtered out, and each component is correctly identified.
+
+Address Components:
+{
+  ""house_number"": ""96"",
+  ""city"": ""Dehradun"",
+  ""state"": ""Uttarakhand"",
+  ""pincode"": ""248125"",
+  ""locality"": ""ambari Jeevangarh"",
+  ""landmark"": ""Jeevangarh"",
+  ""care_of"": ""d/o mohd hasan""
+}"
+"You are parsing an input address (in India) into its components. Your performance will be evaluated on the following criteria:
+    1. information_repetition: same information from the input address should not be repeated in the components.
+    2. information_completeness: a critical address information should not be missed from the components.
+    3. irrelevance_filter: irrelevant piece of information (eg- spurious digits, characters etc) should be filtered out.
+    4. correctness: each parsed component (i.e, each key-value pair) should be correct on its own.
+    Make sure to output only a single JSON at the end.
+
+---
+
+Follow the following format.
+
+Input Address: ${input_address}
+Reasoning: Let's think step by step in order to ${produce the address_components}. We ...
+Address Components: a JSON consisting of a few important components: 'house_number', 'city', 'state', 'pincode'. Any other component (eg- 'block', 'ward_number', 'sector', 'society_name', 'locality', 'street_name', 'street_number' 'colony_name', 'landmark', 'care_of', 'house_name', 'village', 'district', etc.), if present, should be filled. Every part of the input_address should be parsed into exactly 1 component. Fill a component with N/A in case it is missing.
+
+---
+
+Input Address: STNO 13 HNO 8146 MILERGANJ
+Reasoning: Let's think step by step in order to produce the address components. First, we identify the house number, which is indicated by ""HNO 8146"". Next, we see ""STNO 13"" which stands for street number 13. The term ""MILERGANJ"" does not clearly indicate whether it is a city, locality, or another type of area, but based on common naming conventions in India, it could be interpreted as a locality or a part of a city. Since the city and pincode are not mentioned, and no other specific details like state or district are provided, we will mark them as N/A.
+
+Address Components: 
+{
+  ""house_number"": ""8146"",
+  ""street_number"": ""13"",
+  ""locality"": ""MILERGANJ"",
+  ""city"": ""N/A"",
+  ""state"": ""N/A"",
+  ""pincode"": ""N/A""
+}"
+"You are parsing an input address (in India) into its components. Your performance will be evaluated on the following criteria:
+    1. information_repetition: same information from the input address should not be repeated in the components.
+    2. information_completeness: a critical address information should not be missed from the components.
+    3. irrelevance_filter: irrelevant piece of information (eg- spurious digits, characters etc) should be filtered out.
+    4. correctness: each parsed component (i.e, each key-value pair) should be correct on its own.
+    Make sure to output only a single JSON at the end.
+
+---
+
+Follow the following format.
+
+Input Address: ${input_address}
+Reasoning: Let's think step by step in order to ${produce the address_components}. We ...
+Address Components: a JSON consisting of a few important components: 'house_number', 'city', 'state', 'pincode'. Any other component (eg- 'block', 'ward_number', 'sector', 'society_name', 'locality', 'street_name', 'street_number' 'colony_name', 'landmark', 'care_of', 'house_name', 'village', 'district', etc.), if present, should be filled. Every part of the input_address should be parsed into exactly 1 component. Fill a component with N/A in case it is missing.
+
+---
+
+Input Address: 66, DIST AMARAVAT 702 NITIN THAKUR TEH - DHARNI Pune Pune Maharashtra 410506
+Reasoning: Let's think step by step in order to produce the address_components. We start by identifying the key elements of the address:
+
+1. house number: The address begins with '66,' which is typically indicative of a house number.
+2. district: The term 'DIST' suggests that 'AMARAVAT' is the district name.
+3. person name: 'NITIN THAKUR' appears to be the name of a person, which is not typically a part of the address components we need to extract.
+4. tehsil: 'TEH - DHARNI' indicates the tehsil or sub-district.
+5. city: The city is mentioned twice as 'Pune'. We need to ensure this is not repeated in our components.
+6. state: 'Maharashtra' is clearly the state.
+7. pincode: '410506' is the postal code.
+
+Next, we filter out any irrelevant or redundant information:
+- The repetition of 'Pune' is noted, and only one instance is needed.
+- '702' appears to be a spurious number with no clear relevance to the address structure typically used in India.
+
+Now, we can construct the JSON object with the parsed components, ensuring no repetition, maintaining completeness, filtering out irrelevant data, and ensuring correctness.
+
+Address Components:
+{
+    ""house_number"": ""66"",
+    ""city"": ""Pune"",
+    ""state"": ""Maharashtra"",
+    ""pincode"": ""410506"",
+    ""district"": ""Amaravati"",
+    ""tehsil"": ""Dharni""
+}"
+"You are parsing an input address (in India) into its components. Your performance will be evaluated on the following criteria:
+    1. information_repetition: same information from the input address should not be repeated in the components.
+    2. information_completeness: a critical address information should not be missed from the components.
+    3. irrelevance_filter: irrelevant piece of information (eg- spurious digits, characters etc) should be filtered out.
+    4. correctness: each parsed component (i.e, each key-value pair) should be correct on its own.
+    Make sure to output only a single JSON at the end.
+
+---
+
+Follow the following format.
+
+Input Address: ${input_address}
+Reasoning: Let's think step by step in order to ${produce the address_components}. We ...
+Address Components: a JSON consisting of a few important components: 'house_number', 'city', 'state', 'pincode'. Any other component (eg- 'block', 'ward_number', 'sector', 'society_name', 'locality', 'street_name', 'street_number' 'colony_name', 'landmark', 'care_of', 'house_name', 'village', 'district', etc.), if present, should be filled. Every part of the input_address should be parsed into exactly 1 component. Fill a component with N/A in case it is missing.
+
+---
+
+Input Address: 86 SHTRAPAL SOSAYTE BAMROLI Surat Surat Gujarat 394221
+Reasoning: Let's think step by step in order to produce the address_components. We start by identifying the key elements of the address:
+
+1. house number: The address begins with '86', which is typically indicative of a house or building number.
+2. society name: Following the house number, 'SHTRAPAL SOSAYTE' appears to be the name of the society or complex. The spelling 'SOSAYTE' suggests a phonetic spelling of 'Society'.
+3. locality: 'BAMROLI' is mentioned next, which seems to be the locality or area within the city.
+4. city: The city is mentioned twice as 'Surat', which confirms the city name.
+5. state: 'Gujarat' is clearly stated as the state.
+6. pincode: '394221' is provided at the end, which is a standard format for postal codes in India.
+
+Output components should ensure that all relevant information from the input address is captured without repetition, irrelevant details are filtered out, and each component is correctly identified and labeled.
+Address Components: 
+{
+    ""house_number"": ""86"",
+    ""city"": ""Surat"",
+    ""state"": ""Gujarat"",
+    ""pincode"": ""394221"",
+    ""society_name"": ""SHTRAPAL SOSAYTE"",
+    ""locality"": ""BAMROLI""
+}"
+"You are parsing an input address (in India) into its components. Your performance will be evaluated on the following criteria:
+    1. information_repetition: same information from the input address should not be repeated in the components.
+    2. information_completeness: a critical address information should not be missed from the components.
+    3. irrelevance_filter: irrelevant piece of information (eg- spurious digits, characters etc) should be filtered out.
+    4. correctness: each parsed component (i.e, each key-value pair) should be correct on its own.
+    Make sure to output only a single JSON at the end.
+
+---
+
+Follow the following format.
+
+Input Address: ${input_address}
+Reasoning: Let's think step by step in order to ${produce the address_components}. We ...
+Address Components: a JSON consisting of a few important components: 'house_number', 'city', 'state', 'pincode'. Any other component (eg- 'block', 'ward_number', 'sector', 'society_name', 'locality', 'street_name', 'street_number' 'colony_name', 'landmark', 'care_of', 'house_name', 'village', 'district', etc.), if present, should be filled. Every part of the input_address should be parsed into exactly 1 component. Fill a component with N/A in case it is missing.
+
+---
+
+Input Address: JALALABAD Dharakot Moga Punjab 142042
+Reasoning: Let's think step by step in order to produce the address_components. We start by identifying the key elements of the address. The input address ""JALALABAD Dharakot Moga Punjab 142042"" seems to contain multiple components: a locality name, a possible area or sub-locality, the city, the state, and the pincode.
+
+1. village: The name ""JALALABAD"" appears to be a village name.
+2. locality: ""Dharakot"" could be a misspelling of the town ""Dharamkot"" situated near the village ""JALALABAD"".
+3. city: ""Moga"" is identified as the city.
+4. state: ""Punjab"" is clearly the state.
+5. pincode: ""142042"" is the postal code.
+
+There are no explicit mentions of house number, street name, or other specific identifiers like landmarks or sectors. Therefore, these components will be marked as N/A.
+
+Address Components: 
+{
+    ""house_number"": ""N/A"",
+    ""village"": ""Jalalabad"",
+    ""state"": ""Punjab"",
+    ""pincode"": ""142042"",
+    ""locality"": ""Dharakot"",
+    ""city"": ""Moga""
+}
+"
+"You are parsing an input address (in India) into its components. Your performance will be evaluated on the following criteria:
+    1. information_repetition: same information from the input address should not be repeated in the components.
+    2. information_completeness: a critical address information should not be missed from the components.
+    3. irrelevance_filter: irrelevant piece of information (eg- spurious digits, characters etc) should be filtered out.
+    4. correctness: each parsed component (i.e, each key-value pair) should be correct on its own.
+    Make sure to output only a single JSON at the end.
+
+---
+
+Follow the following format.
+
+Input Address: ${input_address}
+Reasoning: Let's think step by step in order to ${produce the address_components}. We ...
+Address Components: a JSON consisting of a few important components: 'house_number', 'city', 'state', 'pincode'. Any other component (eg- 'block', 'ward_number', 'sector', 'society_name', 'locality', 'street_name', 'street_number' 'colony_name', 'landmark', 'care_of', 'house_name', 'village', 'district', etc.), if present, should be filled. Every part of the input_address should be parsed into exactly 1 component. Fill a component with N/A in case it is missing.
+
+---
+
+Input Address: Sumi Bhavan Alanthara Venjaramoodu P O,nellanad Trivandrum Trivandrum Kerala 695607
+Reasoning: Let's think step by step in order to produce the address_components. We start by identifying the key elements of the address:
+
+1. house name: ""Sumi Bhavan"" appears to be the name of the house or building.
+2. locality/village: ""nellanad"" seems to be the locality or village name.
+3. post office (P O): ""Venjaramoodu"" is identified as the post office, which is a common component in rural Indian addresses.
+4. city/district: ""Trivandrum"" is mentioned twice, which likely indicates it as the city or district.
+5. state: ""Kerala"" is clearly the state.
+6. Pincode: ""695607"" is the postal code.
+
+Next, we ensure that there is no repetition of information. ""Trivandrum"" is mentioned twice, so we only need to include it once, preferably as the city or district. We will add it as the city. We also filter out any irrelevant characters or spurious digits, but in this case, all characters are relevant.
+
+Finally, we check for completeness and correctness. Each component is filled with the relevant information from the address, ensuring no critical details are missed and each part is correct.
+
+Address Components:
+{
+    ""house_number"": ""N/A"",
+    ""house_name"": ""Sumi Bhavan"",
+    ""locality"": ""Alanthara"",
+    ""city"": ""Trivandrum"",
+    ""state"": ""Kerala"",
+    ""pincode"": ""695607"",
+    ""post_office"": ""Venjaramoodu P O"",
+    ""village"": ""nellanad""
+}"
+"You are parsing an input address (in India) into its components. Your performance will be evaluated on the following criteria:
+    1. information_repetition: same information from the input address should not be repeated in the components.
+    2. information_completeness: a critical address information should not be missed from the components.
+    3. irrelevance_filter: irrelevant piece of information (eg- spurious digits, characters etc) should be filtered out.
+    4. correctness: each parsed component (i.e, each key-value pair) should be correct on its own.
+    Make sure to output only a single JSON at the end.
+
+---
+
+Follow the following format.
+
+Input Address: ${input_address}
+Reasoning: Let's think step by step in order to ${produce the address_components}. We ...
+Address Components: a JSON consisting of a few important components: 'house_number', 'city', 'state', 'pincode'. Any other component (eg- 'block', 'ward_number', 'sector', 'society_name', 'locality', 'street_name', 'street_number' 'colony_name', 'landmark', 'care_of', 'house_name', 'village', 'district', etc.), if present, should be filled. Every part of the input_address should be parsed into exactly 1 component. Fill a component with N/A in case it is missing.
+
+---
+
+Input Address: D-BLOCK 4/181,182 SULTANPURI New Delhi Delhi Delhi 110086
+Reasoning: Let's think step by step in order to produce the address_components. We start by identifying the house number, which appears to be ""4/181,182"". Next, we note the block, which is ""D-BLOCK"". The locality is ""SULTANPURI"". The city and state are both mentioned as ""New Delhi"" and ""Delhi"" respectively. The pincode is ""110086"". It's important to note that ""Delhi"" is repeated multiple times, but we only need to mention it once under the state component to avoid repetition. There are no other components like ward number, sector, society name, etc., mentioned in the address.
+
+Address Components: 
+{
+    ""house_number"": ""4/181,182"",
+    ""city"": ""New Delhi"",
+    ""state"": ""Delhi"",
+    ""pincode"": ""110086"",
+    ""block"": ""D-BLOCK""
+}"
+"You are parsing an input address (in India) into its components. Your performance will be evaluated on the following criteria:
+    1. information_repetition: same information from the input address should not be repeated in the components.
+    2. information_completeness: a critical address information should not be missed from the components.
+    3. irrelevance_filter: irrelevant piece of information (eg- spurious digits, characters etc) should be filtered out.
+    4. correctness: each parsed component (i.e, each key-value pair) should be correct on its own.
+    Make sure to output only a single JSON at the end.
+
+---
+
+Follow the following format.
+
+Input Address: ${input_address}
+Reasoning: Let's think step by step in order to ${produce the address_components}. We ...
+Address Components: a JSON consisting of a few important components: 'house_number', 'city', 'state', 'pincode'. Any other component (eg- 'block', 'ward_number', 'sector', 'society_name', 'locality', 'street_name', 'street_number' 'colony_name', 'landmark', 'care_of', 'house_name', 'village', 'district', etc.), if present, should be filled. Every part of the input_address should be parsed into exactly 1 component. Fill a component with N/A in case it is missing.
+
+---
+
+Input Address: thakur mohlla koteswar mandir chandra nagar Gwalior Gwalior Madhya Pradesh 474003
+Reasoning: Let's think step by step in order to produce the address_components. We start by identifying the key elements of the address:
+
+1. locality and landmark: The terms ""chandra nagar,"" ""thakur mohlla,"" and ""koteswar mandir"" seem to describe the locality and possibly a landmark (the temple). These can be split into 'locality' and 'landmark' respectively.
+2. city: The city ""Gwalior"" is mentioned twice, which is redundant. We need to ensure this repetition is not reflected in the output.
+3. state: The state is clearly mentioned as ""Madhya Pradesh.""
+4. pincode: The pincode ""474003"" is provided at the end of the address.
+
+By analyzing the address, we can categorize the components without repeating any information and ensuring all critical data is captured. We also need to filter out any irrelevant or redundant information, such as the repeated city name.
+
+Address Components: 
+{
+    ""house_number"": ""N/A"",
+    ""city"": ""Gwalior"",
+    ""state"": ""Madhya Pradesh"",
+    ""pincode"": ""474003"",
+    ""locality"": ""chandra nagar thakur mohlla"",
+    ""landmark"": ""koteswar mandir""
+}"

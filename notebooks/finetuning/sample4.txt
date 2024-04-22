@@ -1,0 +1,20 @@
+86 SHTRAPAL SOSAYTE BAMROLI Surat Surat Gujarat 394221
+Reasoning: Let's think step by step in order to produce the address_components. We start by identifying the key elements of the address:
+
+1. house number: The address begins with '86', which is typically indicative of a house or building number.
+2. society name: Following the house number, 'SHTRAPAL SOSAYTE' appears to be the name of the society or complex. The spelling 'SOSAYTE' suggests a phonetic spelling of 'Society'.
+3. locality: 'BAMROLI' is mentioned next, which seems to be the locality or area within the city.
+4. city: The city is mentioned twice as 'Surat', which confirms the city name.
+5. state: 'Gujarat' is clearly stated as the state.
+6. pincode: '394221' is provided at the end, which is a standard format for postal codes in India.
+
+Output components should ensure that all relevant information from the input address is captured without repetition, irrelevant details are filtered out, and each component is correctly identified and labeled.
+Address Components: 
+{
+    "house_number": "86",
+    "city": "Surat",
+    "state": "Gujarat",
+    "pincode": "394221",
+    "society_name": "SHTRAPAL SOSAYTE",
+    "locality": "BAMROLI"
+}

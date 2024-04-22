@@ -44,7 +44,7 @@ Q: JALAL ROAD SAMADH BHAI Baghapurana Moga Punjab 142057
 A: {"house_number": "N/A", "street_name": "JALAL ROAD", "locality": "N/A", "city": "Baghapurana", "state": "Punjab", "pincode": "142057"}
 
 Q: Room No 133 RAK Road  Wadala Arvi Mumbai Maharashtra 400031
-A: { "house_number": "Room No 133", "city": "Mumbai", "state": "Maharashtra", "pincode": "400031", "locality": "Wadala", "street_name": "RAK Road"}
+A: { "house_number": "Room No 133", "city": "Mumbai", "state": "Maharashtra", "pincode": "400031", "locality": "Wadala Arvi", "street_name": "RAK Road"}
 
 Q: JALALABAD  Dharakot Moga Punjab 142042
 A: {"house_number": "N/A", "city": "Jalalabad", "state": "Punjab", "pincode": "142042", "locality": "Dharakot", "district": "Moga"}

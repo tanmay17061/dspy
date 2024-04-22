@@ -1,0 +1,26 @@
+66, DIST AMARAVAT 702 NITIN THAKUR TEH - DHARNI Pune Pune Maharashtra 410506
+Reasoning: Let's think step by step in order to produce the address_components. We start by identifying the key elements of the address:
+
+1. house number: The address begins with '66,' which is typically indicative of a house number.
+2. district: The term 'DIST' suggests that 'AMARAVAT' is the district name.
+3. person name: 'NITIN THAKUR' appears to be the name of a person, which is not typically a part of the address components we need to extract.
+4. tehsil: 'TEH - DHARNI' indicates the tehsil or sub-district.
+5. city: The city is mentioned twice as 'Pune'. We need to ensure this is not repeated in our components.
+6. state: 'Maharashtra' is clearly the state.
+7. pincode: '410506' is the postal code.
+
+Next, we filter out any irrelevant or redundant information:
+- The repetition of 'Pune' is noted, and only one instance is needed.
+- '702' appears to be a spurious number with no clear relevance to the address structure typically used in India.
+
+Now, we can construct the JSON object with the parsed components, ensuring no repetition, maintaining completeness, filtering out irrelevant data, and ensuring correctness.
+
+Address Components:
+{
+    "house_number": "66",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "pincode": "410506",
+    "district": "Amaravati",
+    "tehsil": "Dharni"
+}

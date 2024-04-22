@@ -1,0 +1,12 @@
+RAK Road Wadala Arvi Room No 133 Mumbai Maharashtra 400031
+Reasoning: Let's think step by step in order to produce the address_components. We start by identifying the house number, which in this case is given as "Room No 133". Next, we look for the street name, which is "RAK Road". The locality is identified as "Wadala Arvi", which seems to be a specific area within the larger city context. The city is clearly mentioned as "Mumbai". The state is "Maharashtra", and the pincode is "400031".
+
+Address Components: 
+{
+  "house_number": "Room No 133",
+  "street_name": "RAK Road",
+  "locality": "Wadala Arvi",
+  "city": "Mumbai",
+  "state": "Maharashtra",
+  "pincode": "400031"
+}
