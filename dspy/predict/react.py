@@ -86,7 +86,7 @@ class ReAct(Module):
     def act(self, output, hop):
         try:
             action = output[f"Action_{hop+1}"]
-            action_name, action_val = action.strip().split("\n")[0].split("[", 1)
+            action_name, action_val = action.strip().split("[", 1)
             action_val = action_val.rsplit("]", 1)[0]
 
             if action_name == "Finish":
